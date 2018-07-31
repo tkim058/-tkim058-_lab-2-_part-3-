@@ -46,31 +46,31 @@ int main(void)
 		
 		if(fuel == 0x00)
 		{
-			tmpC = (tmpC & 0x80) | 0x40;
+			tmpC = 0x40;
 		}
 		else if(fuel == 0x01 || fuel == 0x02)
 		{
-			tmpC = (tmpC & 0x80) | 0x60;
+			tmpC = 0x60;
 		}
 		else if(fuel == 0x03 || fuel == 0x04)
 		{
-			tmpC = (tmpC & 0x80) | 0x70;
+			tmpC = 0x70;
 		}
 		else if(fuel == 0x05 || fuel == 0x06)
 		{
-			tmpC = (tmpC & 0x80) | 0x38;
+			tmpC = 0x38;
 		}
 		else if(fuel == 0x07 || fuel == 0x08 || fuel == 0x09)
 		{
-			tmpC = (tmpC & 0x80) | 0x3C;
+			tmpC = 0x3C;
 		}
 		else if(fuel == 0x0A || fuel == 0x0B || fuel == 0x0C)
 		{
-			tmpC = (tmpC & 0x80) | 0x3E;
+			tmpC = 0x3E;
 		}
 		else if(fuel == 0x0D || fuel == 0x0E || fuel == 0x0F)
 		{
-			tmpC = (tmpC & 0x80) | 0x3F;
+			tmpC = 0x3F;
 		}
 		PORTC = tmpC;
 	}
